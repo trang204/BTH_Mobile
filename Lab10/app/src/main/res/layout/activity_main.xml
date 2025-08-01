@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BroadcastReceiver1"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="#009688"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:gravity="start|center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_sms_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Receiver"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="#00BCD4"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:elevation="4dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
