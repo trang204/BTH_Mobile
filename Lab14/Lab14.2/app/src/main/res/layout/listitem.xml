@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txtmaso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52300"
+        android:textColor="#00AA00"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/txttieude"
+        android:layout_width="0dp"                 android:layout_height="wrap_content"
+        android:layout_weight="1"                  android:text="Tên bài hát sẽ hiển thị ở đây"
+        android:textSize="16sp"
+        android:singleLine="true"                  android:ellipsize="end"                    android:textColor="@android:color/black" /> <ImageButton
+    android:id="@+id/btnlike"
+    android:layout_width="28dp"                  android:layout_height="28dp"                 android:background="@null"
+    android:src="@drawable/unlike"             android:padding="2dp"                      android:scaleType="fitCenter" />           </LinearLayout>
