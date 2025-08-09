@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NHẬP A:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <EditText
+        android:id="@+id/edta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NHẬP B:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <EditText
+        android:id="@+id/edtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <EditText
+        android:id="@+id/edtkq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btntong"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="TỔNG"/>
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="XÓA"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:background="#B2DFDB"/>
+
+    <TextView
+        android:id="@+id/txtlichsu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:background="#E0F2F1"
+        android:textSize="16sp"
+        android:scrollbars="vertical"/>
+</LinearLayout>
