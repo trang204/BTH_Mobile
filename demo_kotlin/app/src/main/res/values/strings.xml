@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">demo_kotlin</string>
+    <string name="app_title">Contact Management</string>
+    <string name="id_label">ID:</string>
+    <string name="id_hint">Contact ID</string>
+    <string name="name_label">Name:</string>
+    <string name="name_hint">Enter contact name</string>
+    <string name="phone_label">Phone:</string>
+    <string name="phone_hint">Enter phone number</string>
+    <string name="email_label">Email:</string>
+    <string name="email_hint">Enter email address</string>
+    <string name="add_button">Add</string>
+    <string name="update_button">Update</string>
+    <string name="delete_button">Delete</string>
+    <string name="query_button">Refresh</string>
+    <string name="contacts_list_label">Contacts List:</string>
+</resources>
