@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:tabStripEnabled="true" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Tab 1: Search -->
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="#E0E0E0">
+
+                    <EditText
+                        android:id="@+id/edt_search"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:hint="yeu em"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp"
+                        android:background="#FFFFFF"
+                        android:inputType="text" />
+
+                    <ImageButton
+                        android:id="@+id/btn_delete"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="#FF5722"
+                        android:src="@drawable/xoa"
+                        android:scaleType="centerInside"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:divider="#E0E0E0"
+                    android:dividerHeight="1dp"/>
+            </LinearLayout>
+
+            <!-- Tab 2: List -->
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <ListView
+                    android:id="@+id/lv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:divider="#E0E0E0"
+                    android:dividerHeight="1dp"/>
+            </LinearLayout>
+
+            <!-- Tab 3: Favourite -->
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <ListView
+                    android:id="@+id/lv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:divider="#E0E0E0"
+                    android:dividerHeight="1dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
